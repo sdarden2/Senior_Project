@@ -1,0 +1,269 @@
+﻿/*css for design.html*/
+.headers
+{
+	position:relative;
+	background-image:url(/img/cinema.png);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	background-color: #DBDBDB;
+	width:80%;
+	height:400px;
+	margin-right:10%;
+	margin-left:10%;
+	margin-bottom:80px;
+}
+a:link
+{
+	color:white;
+}
+a:visited
+{
+	color:white;
+}
+.hidden_span
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:1;
+}
+.search_bar
+{
+	background-color:aliceblue;
+	width:60%;
+	margin-right:20%;
+	margin-left:20%;
+	height:265px;
+	margin-bottom:40px;	
+}
+.movie_poster
+{
+	height:220px;
+	width:135px;
+	border-radius:20px;
+	margin-top:15px;
+	margin-bottom:15px;
+	/*background-color:white;*/
+	float:left;
+	padding-right:8px;
+
+	
+}
+.movie_ratings
+{
+	color:azure;
+	position: absolute;
+	left: 850px;
+	bottom:30px;
+	z-index:1;
+	margin-top: 16px;
+	float:left;
+}
+.movie_title
+{
+	margin-bottom:1px;
+	width:500px;
+	margin-top:12px;
+}
+.credits
+{
+	float:left;
+	color:azure;
+	width:200px; /*Changed from 400px, why did I do 400px???*/
+	position:absolute;
+	left:650px;
+	top:35px;
+}
+.movie_info
+{
+	float:left;
+	color:azure;
+	width:500px;
+	font-family: "Garamond";
+	font-weight:bold;
+}
+.name_item
+{
+	margin-bottom: 2px;
+	margin-top: 2px;
+	font-family: "Garamond";
+	font-weight:bold;
+
+}
+.avg_rating_box
+{
+	color: azure;
+	height: 200px;
+	width: 200px;
+	float: left;
+	margin-left:25px;
+	text-align:center;
+	position:absolute;
+	top:18px;
+	left:1050px;
+	
+	
+}
+.movie_box
+{
+	/*opacity:.92;*/
+	opacity:.9;
+	border-radius:20px;
+	border: 2px solid grey;
+	background-color: /*#00002D;*/ #3F3F3F;
+	width: 70%;
+	margin-right:15%;
+	margin-left:15%;
+	margin-bottom:25px;
+	margin-top:10px;
+	height:250px;
+	padding-top:5px;
+	padding-left:12px;5
+	padding-bottom:5px;	
+	float:left;
+	position:relative;
+	transition: border .6s, background-color .6s, opactiy .6s;
+}
+.radios
+{
+	width:40%;
+	height:100px;
+	margin:0 auto;
+	background-color:grey;
+}
+.c1
+{
+	font-family: "Bernard MT Condensed";
+	color:white;
+}
+.sort_text
+{
+	text-align:center;
+	color:white;
+}
+.sort_form
+{
+	text-align:center;
+}
+.movie_box:hover
+{
+	border: 2px solid white;
+	background-color:#252525;
+	opacity:1;
+}
+/*
+.movie_box:hover
+{
+	animation-name:movie_box_animate;
+	animation-duration:.5s;
+	animation-iteration-count:1;
+	
+}
+@keyframes movie_box_animate
+{
+	from{border:2px solid grey;}
+	to{border:2px solid white;}
+}
+*/
+.info_box
+{
+	margin-bottom:15px;
+	
+}
+.poster_pic
+{
+	border: 3px solid grey;
+	margin-top:1px;
+	border-radius:20px;
+	
+	float:left;
+}
+
+.poster_pic:hover
+{
+	animation-name:poster_animation;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+@keyframes poster_animation
+{
+	0% {width:130px,height:210px};
+	100% {width:145px,height:220px;}
+}
+.movie_rating_text
+{
+	padding-left: 8px;
+	font-family: "Bernard MT Condensed";
+	font-size: 31px;
+	float: right;
+	color:white;
+}
+.null_movie_rating_text
+{
+	padding-left: 8px;
+	font-family: "Bernard MT Condensed";
+	font-size: 31px;
+	float: right;
+	color:white;
+	opacity:.15;
+
+}
+.rating_img
+{
+	border-radius:8px;
+}
+.null_rating_img
+{
+	border-radius:8px;
+	opacity:.15;
+}
+.avg_rating_number
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:40px;
+	margin-top:20%;
+	margin-bottom:20%;
+}
+.avg_rating_text
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:30px;	
+	padding-top:0;
+	margin-top:0;
+	margin-bottom:20px;
+}
+.avg_rating_div
+{
+	border: 1px solid #FFFF0D;
+	border-radius:10px;
+	height:80px;
+	width:60px;
+	text-align:center;
+	vertical-align:central;
+	float:left;
+	margin-left:70px;
+	background-color:black;
+	
+}
+.d_search
+{
+	height:50%;	
+	border: 1px solid black;
+	text-align:center;
+}
+.d_sort
+{
+	height:50%;
+	border:1px solid black;
+}
+.search_form
+{
+	
+}
+body
+{
+	background-color:/*#333;*/ black!important;
+}

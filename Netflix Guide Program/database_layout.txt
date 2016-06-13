@@ -1,0 +1,62 @@
+Database Layout
+
+Tables in movie_db:
++--------------------+
+| Tables_in_movie_db |
++--------------------+
+| actor_movies       |
+| actors             |
+| director_movies    |
+| directors          |
+| movies             |
++--------------------+
+
+Table: movies
++-------------+---------------+------+-----+---------+----------------+
+| Field       | Type          | Null | Key | Default | Extra          |
++-------------+---------------+------+-----+---------+----------------+
+| Movie_ID    | int(11)       | NO   | PRI | NULL    | auto_increment |
+| Title       | varchar(100)  | NO   |     | NULL    |                |
+| Year        | varchar(4)    | YES  |     | NULL    |                |
+| Imdb_Rating | float(2,1)    | YES  |     | NULL    |                |
+| Rt_Rating   | float(2,1)    | YES  |     | NULL    |                |
+| Meta_Rating | float(2,1)    | YES  |     | NULL    |                |
+| Avg_Rating  | float(2,1)    | YES  |     | NULL    |                |
+| Rated       | varchar(8)    | YES  |     | NULL    |                |
+| Poster_Link | varchar(256)  | YES  |     | NULL    |                |
+| Imdb_Url    | varchar(256)  | YES  |     | NULL    |                |
+| Plot        | varchar(1024) | YES  |     | NULL    |                |
+| Genre       | varchar(256)  | YES  |     | NULL    |                |
++-------------+---------------+------+-----+---------+----------------+
+
+Table: Actors
++------------+--------------+------+-----+---------+----------------+
+| Field      | Type         | Null | Key | Default | Extra          |
++------------+--------------+------+-----+---------+----------------+
+| Actor_ID   | int(11)      | NO   | PRI | NULL    | auto_increment |
+| Actor_Name | varchar(128) | NO   |     | NULL    |                |
++------------+--------------+------+-----+---------+----------------+
+
+Table: Actor_Movies
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| Movie_ID | int(128) | NO   | MUL | NULL    |       |
+| Actor_ID | int(11)  | NO   | MUL | NULL    |       |
++----------+----------+------+-----+---------+-------+
+
+Table: Directors
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| Director_ID   | int(11)      | NO   | PRI | NULL    | auto_increment |
+| Director_Name | varchar(128) | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+
+Table: Director_Movies
++-------------+----------+------+-----+---------+-------+
+| Field       | Type     | Null | Key | Default | Extra |
++-------------+----------+------+-----+---------+-------+
+| Movie_ID    | int(128) | NO   | MUL | NULL    |       |
+| Director_ID | int(11)  | NO   | MUL | NULL    |       |
++-------------+----------+------+-----+---------+-------+
